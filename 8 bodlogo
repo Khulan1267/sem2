@@ -1,0 +1,96 @@
+#1
+def palindrome(n):
+    x=n
+    r=0
+    while(n>0):
+        dig=n%10
+        r=r*10+dig
+        n=n//10
+    if(x==r):
+        print("Palindrome too")
+    else:
+        print("Palindrome bish")
+n=int(input())
+palindrome(n)
+
+
+
+#2 
+a=['a', 'B', 'C', 'd', 'e']
+s=0
+x=0
+for i in a:
+    if (i>='a' and i<'z'):
+        s=s+1
+    if (i>='A' and i<'Z'):
+        x=x+1        
+print('Tom useg: ',x)
+print('Jijig useg: ',s)
+
+
+
+
+#3 
+def urjver(a):
+    b = 1
+    for i in a:
+        b = b * i
+    return b
+
+
+numbers=[3,4,5,2,1]
+print(urjver(numbers))
+
+
+
+
+#4
+def func(x):
+    s = 1
+    for i in range(2, x + 1):
+        s *= i
+    return s
+num=int(input())
+print(func(num))
+
+
+
+
+#5
+def rev(n):
+    list2.reverse()
+    return n
+list2 = [5, 6, 8, 12, 4, 11]
+print(rev(list2))
+
+
+
+
+#6
+def sumlist(n):
+numbers=[4,5,6,2,4,6,7,5,3,8]
+s=0
+for i in numbers:
+    s=s+i
+print(s)
+
+
+
+
+#7
+def dawhardsan(a):
+    return list(dict.fromkeys(a))
+mylist = dawhardsan(['1234', 'qwer', 567, 567, 'qwer'])
+print(mylist)
+
+
+
+
+#8
+def maxim(a, b, c):
+    list = [a, b, c]
+    return max(list)
+a = 4
+b = 7
+c = 8
+print(maxim(a, b, c))
